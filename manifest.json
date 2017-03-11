@@ -1,0 +1,32 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 2,
+
+  "name": "ChromeStickies",
+  "description": "An app that add notes and sticky notes to webpages for you",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [ {
+      "css": [ "stickies.css" ],
+      "js": [ "stickies.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+
+  "icons": { 
+    "16": "sticky_16x16.png",
+    "48": "sticky_48x48.png",
+    "128": "sticky_128x128.png" },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "https://ajax.googleapis.com/",
+    "http://*/*", 
+    "https://*/*"
+  ]
+}

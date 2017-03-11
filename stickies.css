@@ -1,0 +1,49 @@
+
+.chrome-sticky {
+    background-color: yellow;
+	color: black;
+    height: 150px;
+    padding: 10px;
+    position: absolute;
+    width: 150px;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chrome-sticky .datestring {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    font-size: 9px;
+    color: black;
+    padding: 2px 4px;
+    text-align: right;
+    background-color: transparent;
+    text-align: center;
+}
+
+.chrome-sticky .delete-button {
+	text-align: right;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 9px;
+    color: black;
+    padding: 2px 4px;
+    width: 18%;
+}
+.chrome-sticky .delete-button:hover {
+    color: blue;
+}
+
+.chrome-sticky .text-rect {
+	padding-top: 10px;
+    outline: none;
+	text-align: left;
+	font-size: 14px;
+	font-family: Times;
+	height: 120px;
+	overflow: auto;
+}
+
